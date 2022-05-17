@@ -1,0 +1,101 @@
+一、  if 语句
+
+语法：  if（条件）{
+       语句块
+    }
+
+二、if--else 语句
+
+语法：  if（条件）{
+        语句块
+    }else{
+        语句块
+    }
+补充 ：三元表达式 
+
+语句：
+       条件表达式 ? 语句1 : 语句2
+
+       eg: 5>1? console.log('yes'):console.log('no')
+
+       此语句的意思是： 5>1? 若大于则输出 yes  否则输出 no
+
+
+三、 if-else if 
+
+语法： if（条件）{
+        语句块
+    }else if{
+        语句块
+    }else if{
+        语句块
+    }
+
+四、switch--case
+   switch(表达式){
+       case 值1:{
+
+       }
+       case 值2:{
+
+       }
+       case 值3:{
+
+       }
+       default:{//默认值，若前面的若干case都没匹配上，则执行default中的语句
+
+       }
+   }
+    
+   穿透：若case n 之前的case 与case n中的语句块相同，则可利用穿透，简写代码
+
+   // 此时若case 1 2 与表达式相匹配，执行的仍是case 值3 中的代码 
+    eg:
+    switch(表达式){
+       case 值1:
+       case 值2:
+       case 值3:{
+                  语句块
+       }
+       default:{//默认值，若前面的若干case都没匹配上，则执行default中的语句
+
+       }  
+
+五、while 语句
+   
+   语法:
+             while(条件表达式){
+                 语句块(循环体)
+             }
+
+          循环四要术:
+             1. 循环初始值
+             2. 循环条件 
+             3. 改变循环条件语句
+             4. 循环执行的语句
+
+六、 do-while 语句
+                                               var n=1;
+  语法：do{                                    do{      // 正向输出1-5
+            循环体                                console.log(n);
+          }while(循环条件)                         n++
+                                                 }while(n<=5)                                                
+               
+
+七、for 循环语句
+
+语句： for (){
+
+     }
+  
+  eg： for(var i=0;i<=10;i++){//中间必须用‘;’隔开
+
+  }
+
+八、双重循环
+         for(var i=0;i<n;i++){// 1、外层循环打印行 
+              for(var j=0;j<i;j++){//  2、内层循环打印每行元素 
+
+               }
+          }
+         console.log(); // 控制台输出内容，  控制台输出的特点：每行输出一个就换行
