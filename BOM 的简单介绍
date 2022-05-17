@@ -1,0 +1,25 @@
+一、BOM :  浏览器对象模型  
+
+    可以提供操作浏览器的能力、浏览器窗口对象： window
+
+二、window 的特殊属性
+   
+   window.history       页面的历史记录
+
+   window.location      页面当前的位置
+
+   window.navigator     其中包含浏览器的相关信息
+
+   window.screen        用户显示屏幕的相关信息
+
+   window.document      文档对象
+  
+ 三、window的常用方法
+  
+  1、 弹框类
+  
+     1、alert() 显示一个带有提示信息和一个确定按钮的警示框   
+     
+     2、
+     
+     
