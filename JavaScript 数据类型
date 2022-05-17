@@ -1,0 +1,37 @@
+一、根据变量存储的数据类型不同，将变量划分为不同的数据类型
+ 
+ 五种基本的数据类型
+     1、数值类型        number           var num=100;
+     2、字符串类型      string           var num='张三'
+     3、布尔类型        boolean          var num=true  注：Boolean 的值只有  true 和 false
+     4、未定义         undefined         定义了但是未赋值，默认值为 undefined    eg: var num;
+     5、空             null              var num=null
+
+
+二、 检查变量的数据类型
+
+1、 语法： typeof 
+  用法  ：  var num=100;
+           console.log(typeof num)
+
+2、 isNaN :  is Not a Number   不是数字
+    当该数值是非数值时，则返回 true 。 若是数值，则返回false
+
+
+三、数据类型的转换
+    1、其他类型转换为数字类型 
+        语法： Number（）;   ParseInt();  ParseFloat();
+
+        Number（）;  :从左到右便利字符串转换，遇到非数值，则停止转换。如果第一个字符是非数值，则返回NaN
+        ParseInt();  :从左到右便利字符串转换，遇到非数值，则停止转换。如果第一个字符是非数值，则返回NaN
+                      通常用于取整 
+        ParseFloat();：从左到右便利字符串转换，遇到小数点也不会停止。通常用于全部转换成数值
+
+    2、其他类型转换为 字符串类型
+        语法：String（）;   e.toString();
+        注：e.toString(); undefined和null不能转换
+
+    3、其他类型转换为Boolean类型
+       语法：Boolean();
+       注： ‘ ’，unundefined,0,null,NaN 转化为 false 
+           其他的转化为 true 
