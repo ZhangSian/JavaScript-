@@ -1,0 +1,76 @@
+一、什么是数组
+由一系列有序的数据的集合       数据 可以是字符串、数字、对象
+
+二、 定义数组的方法
+ 1、构造函数法
+
+   var arr = new Array()
+
+ 2、字面量法   //  最常用的定义数组的方法
+    
+   var  arr = []
+
+三、数组的常用属性
+
+1、 .length     //表示数组的长度        eg:   arr.length
+
+2、 index    索引号 
+
+   在数组中，每一个元素都唯一对应一个索引号，因此我们可以通过索引号来访问数组中的某个元素  eg  arr[i] // 数组arr中的索引号为i的元素
+   注意：index 以0开始
+
+   var arr = [ 1, 2, 3, 4, 5]
+
+     索引号:   0, 1, 2, 3, 4
+
+ 通过索引号修改数组中的元素： arr[0]=10; // 将10赋值给arr 中的索引号为0 的元素，即第一个元素
+
+四、 遍历数组
+
+   var arr=[1,2,3,4,5]
+
+   for(var i = 0; i < arr.length; i++ ){  // 通过这种方法便可遍历数组
+
+   }
+
+五、数组变量的常用方法
+ 
+   1、 .forEach(函数)
+
+    eg:    var arr=[1,2,3,4]
+       
+       arr.forEach(function(item,index,arr){      
+
+        //循环体
+
+       })
+注： item 等同于 arr[i]     index  等同于  i           arr  就是数组arr   
+    
+     这三者需要用的时候才写，不需要用的时候可以不写
+
+   2、.map()   
+      
+   用法：   var newArray= arr.map() // 使用 map() 时会返回一个新数组。在使用时需要定义一个新数组用来接收返回的数组
+
+   3、 .filter     //遍历数组，找到满足条件的元素并返回到新数组中
+
+      eg :  var arr=[1,2,3,4,5,6]
+           var newArray=arr.filter(function(item){
+
+            return item>2
+
+           })      // 得到的newArray 是 [3,4,5,6]
+            
+   4、 .find()   // 返回满足条件的第一个元素，返回的是item
+
+   5、 .some()    // 判断数组中是否有满足条件的元素，如果有则返回true、否则返回false
+
+   6、 .every()   //判断数组中的所有元素是否都满足条件。如果都满足返回true、否则返回false
+    
+   7、 .reduce()  //数组的累加
+     
+      用法：  arr.reduce(function(s,item){
+
+        return s+item              // s 是必要元素  0是S的初始值，可以修改   item，index有需要就加
+
+      },0)
