@@ -1,0 +1,15 @@
+
+1、JavaScript 在解析函数时，会将声明式定义函提前，但是赋值不提前
+
+   eg： var num = 10;
+ 
+   JavaScript 在解析时，会将var num 提前。但是此时num 无值
+
+2、将声明变量提前
+   function fn(){  // 这个函数会被提前
+
+   }
+
+   var fn = function(){ //这个函数不会被提前
+
+   }
