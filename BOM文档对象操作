@@ -1,0 +1,44 @@
+一、 DOM： 提供操作HTML文档标签元素的能力
+
+二、获取标签元素 
+  
+  1、document.getElementById('#id名')    通过id获取元素
+  2、document.getElementByClassName('.类名')   通过类名获取元素（可获得多个 获取之后会返回一个数组）
+  
+   注： 伪数组和数组的区别 
+      伪数组能够遍历但不能使用数组的常用方法
+      
+   最常用的获取标签元素的方法：
+   
+     document.querySelector('')  => 括号中可填 #id , .ClassName  
+     document.querySelectorAll('')  获取所有的括号中的元素   会返回一个伪数组
+     
+ 三、操作元素内容 
+  
+    innerHTML  会解析html的标签
+    innerText  不会解析html的标签  会将标签当作文本全部展示出来
+    
+四、操作样式
+    
+    1、  行间样式 ： style.样式明=样式值     eg :   e.style.color="red"
+    
+    2、 修改类名 :  e.ClassName = ''
+    
+    3、 添加样式 ： e.classList.add('')
+    
+    4、 删除指定样式 ： e,classList.remove('')
+   
+五、操作属性
+    
+    1、 获取属性值
+    
+       let 属性值 = getAttribute('属性名')
+       
+    2、设置属性
+       
+       setAttribute('属性名','属性值')
+       
+六、 操作事件
+
+    1、赋值式      e.onclick = function(){}  //绑定点击事件
+    2、事件监听    e.addEventListener('click',function(){})    // 绑定点击事件
