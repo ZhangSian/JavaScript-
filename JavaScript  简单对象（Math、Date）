@@ -1,0 +1,55 @@
+一、 对象：对象是一个具体的事物，由属性和方法组成。
+          所有的事物都可以是对象，例如：字符串，数值，数组
+二、 创建对象的方法
+ 
+    第一种：构造函数：  var obj = new Object()                  第二种： 字面量   var obj={                      
+                      obj.name='jack'                                            name:'jack',
+                      obj.age=18                                                 age:18
+    }                                                                           }          字面量法，每个属性之间必须用 "," 隔开（英文逗号）
+
+
+三、变量，属性的区别
+   1、相同点： 变量和属性都是用来存储数据的
+   2、不同点： 变量，单独声明并赋值。使用时直接写变量名即可
+              属性，在对象中，不需要单独声明，使用时是 对象.属性 
+
+四、函数，方法的区别
+   1、相同点：函数和方法都是实现某个功能的
+   2、不同点：函数，单独声明，使用时需要调用
+             方法，在对象中，使用时是 对象.方法
+
+五、Math对象  ：用于处理数学相关的问题
+    
+    用法：Math.方法() 
+
+    常用方法： 1、随机数：Math.random()  //用于生成一个0-1的随机数，不包括1；[0,1) 
+
+     拓展： 生成想要的范围内的随机数
+            
+            function getRandom(m,n){
+                var max = Math.max(m,n)
+                var min = Math.min(m,n)
+                return Math.floor(Math.random()*(max-min)+min)
+            }
+
+    取整：           round()   四舍五入
+             Math.  ceil()    向上取整
+                    floor()   向下取整
+
+    取绝对值： Math.abs()
+
+    最大值  ： Math.max()     括号中可填多个数，会直接返回最大值    
+              求数组中的最大值   Math.max(...arr)
+
+    最小值  ： Math.min()     用法与最大值相同
+
+六、时间对象   Date
+   
+   1、定时器 setTimeout(function(){
+    
+   },time)   // time 的单位是毫秒。 该函数的意思是 time 秒后执行函数中的代码
+
+   2、循环执行    setInterval(function(){
+
+   },time)   // time 的单位是毫秒。该函数的意思是  每隔time秒就执行函数中的代码
+
